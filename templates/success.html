@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" type="image/png" href="https://gcdnb.pbrd.co/images/cPhCVrB22ZLU.jpg?o=1">
+  <title>YumRadar</title>
+
+</head>
+<body>
+  
+<style>
+
+.container{
+
+display: flex;
+align-items: center;
+height: 1000px;
+width: 100%;
+flex-direction: column;
+ gap: 20px;
+
+ min-width: 369px;
+}
+
+a{
+
+text-decoration: none;
+color: white;
+
+}
+
+.Succesful{
+
+padding: 0 15px;
+background-color: rgb(197, 67, 95);
+font-size: 20px;
+font-weight: bold;
+color: white;
+letter-spacing: 1px;
+border-radius: 10px;
+transition: 0.3s;
+cursor: pointer;
+margin-top: 10px;
+}
+
+
+.Succesful:hover{
+
+
+  background-color: rgb(197, 67, 95);
+  
+}
+
+img{
+
+width: 300px;
+height: 300px;
+
+}
+
+
+@media (max-width: 768px){
+
+
+  img{
+
+    width: 200px;
+    height: 200px;
+    
+    }
+    
+
+
+    
+.Succesful{
+
+  padding: 2 1px;
+  background-color: rgb(197, 67, 95);
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+ 
+  }
+  
+  p{
+
+    font-size: 18px;
+
+  }
+
+}
+
+</style>
+
+
+<div class="container">
+
+
+
+<img src="   https://cdn-icons-png.flaticon.com/512/4814/4814961.png " alt="" style="margin-top: 100px;">
+  
+
+<p style="font-size: 24px; letter-spacing: 1px; font-weight: bold; color:rgb(211, 73, 73)">You have  successfully logged in </p>
+
+<div class="Succesful">
+
+
+ <a href="{{ url_for('index') }}"> <p>Continue<i class="fa-solid fa-right-long" style="margin-left: 10px;"></i></p></a>
+
+</div>
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
